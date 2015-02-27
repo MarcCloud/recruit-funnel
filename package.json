@@ -1,0 +1,24 @@
+{
+  "name": "recruit-funnel",
+  "version": "0.0.1",
+  "description": "Web application to aid in technical interviews",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "keywords": [
+    "TechScreen",
+    "Candidate",
+    "Innterview",
+    "Feedback"
+  ],
+  "author": "Marco Romero",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.8.11"
+  },
+  "dependencies": {
+    "express-react-views": "^0.7.1",
+    "react": "^0.12.2"
+  }
+}

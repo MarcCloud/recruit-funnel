@@ -6,8 +6,11 @@ var express=require('express'),
     server.set('view engine', 'jsx');
     server.set('views', __dirname + '/server/views');
     server.engine('jsx', require('express-react-views').createEngine());
+    server.use(express.static(__dirname+'/www'));
+
     server.get('/',function(req,res){
        res.render('index');
     });
+
     server.listen(port);
     console.log('server running on %d',port);

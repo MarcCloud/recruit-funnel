@@ -1,10 +1,13 @@
-var Layout = require('../partials/layout'),
+var Layout = require('../../partials/layout'),
     React = require('react');
-var HelloMessage = React.createClass({
+var IndexPage = React.createClass({
         render :function (){
             return (<Layout title = "Recruit Funnel">
-                        <h1>Hi Im reacting</h1>
+                        <div id="app" className="container-fluid main">
+
+                        </div>
+                        <script type="text/javascript" src="/scripts/login.min.js"></script>
                     </Layout>)
         }
     });
-module.exports=HelloMessage;
+module.exports=IndexPage;

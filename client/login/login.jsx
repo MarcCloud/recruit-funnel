@@ -10,7 +10,7 @@ var LoginForm = React.createClass({
         }
     },
     render:function(){
-        return(<Form url="/login" onSuccess={this.changeUrl} submitLabel="Log In">
+        return(<Form url="/api/login" onSuccess={this.changeUrl} submitLabel="Log In">
                     <div className="form-group">
                         <label>Email</label>
                         <Input  type="email"

@@ -8,9 +8,6 @@ var express=require('express'),
     server.engine('jsx', require('express-react-views').createEngine());
     server.use(express.static(__dirname+'/www'));
 
-    server.get('/',function(req,res){
-       res.render('index');
-    });
-
+    server.use(require('./server/routes'));
     server.listen(port);
     console.log('server running on %d',port);

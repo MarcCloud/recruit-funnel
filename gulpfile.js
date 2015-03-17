@@ -19,3 +19,8 @@ var gulp = require('gulp'),
             .pipe(source('login.min.js'))
             .pipe(gulp.dest('./www/scripts'));
     });
+
+    gulp.task('watch',function(){
+       gulp.watch(['/client/**/*.js','/partials/**/*.js'],['build-loginjs']);
+       gulp.watch('/client/**/*.styl',['stylus']);
+    });

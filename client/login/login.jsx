@@ -1,25 +1,35 @@
 var React=require('react'),
-    InputEmail=require('../../partials/input-email.jsx'),
-    InputPassword=require('../../partials/input-password.jsx'),
-    ButtonLogin=require('../../partials/button-login.jsx');
+    Form = require('../../partials/component-form.jsx'),
+    Input=require('../../partials/component-input.jsx');
 
 var LoginForm = React.createClass({
-    handleSubmit:function(e){
-        e.preventDefault();
-        var email=this.refs.userEmail.refs.email.getDOMNode().value.trim();
-        var password= this.refs.userPassword.refs.password.getDOMNode().value.trim();
-        console.log(email,password);
+    changeUrl:function(err,res){
+        if(err!==null){
+            console.log(res);
+           // location.href='/dashboard';
+        }
     },
     render:function(){
-        return(<form action="/login"
-                     method="POST"
-                     className="col-md-3 col-md-offset-4"
-                     onSubmit={this.handleSubmit}
-                     noValidate="true">
-                    <InputEmail id="email" ref="userEmail"/>
-                    <InputPassword id="password" ref="userPassword"/>
-                    <ButtonLogin id="btnLogin"/>
-                </form>)
+        return(<Form url="/login" onSuccess={this.changeUrl} submitLabel="Log In">
+                    <div className="form-group">
+                        <label>Email</label>
+                        <Input  type="email"
+                                name="email"
+                                validations="isEmail"
+                                validationError="This is not a valid email"
+                                placeholder="email@example.com"/>
+                    </div>
+                    <div className="form-group">
+                        <label>Password</label>
+                        <Input
+                            type="password"
+                            name="password"
+                            validations="isPassword"
+                            validationError="This is not a valid password"
+                        />
+                    </div>
+                </Form>
+                )
     }
 });
 

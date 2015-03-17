@@ -25,6 +25,8 @@
   },
   "dependencies": {
     "express-react-views": "^0.7.1",
-    "react": "^0.12.2"
+    "is_js": "^0.7.1",
+    "react": "^0.12.2",
+    "superagent": "^1.1.0"
   }
 }

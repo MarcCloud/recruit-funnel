@@ -12,7 +12,7 @@ var LoginForm = React.createClass({
     render:function(){
         return(
                 <div className="form col-md-3"  onSubmit={this.submit}>
-                    <form>
+                    <form noValidate>
                         <div className="form-group">
                             <label htmlFor="user_mail">Email</label>
                             <input id="user_mail" type="email" className="form-control" placeholder="mail@example.com" ref="email"/>

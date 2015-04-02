@@ -18,7 +18,7 @@ var LoginStore = Backbone.Model.extend({
 var store = new LoginStore();
 
 function login(){
-    store.save();
+    store.save().then(function(res){console.log(res.headers)});
 }
 
 dispactcher.on('all',function(event,payload){
@@ -34,3 +34,5 @@ dispactcher.on('all',function(event,payload){
    }
 
 });
+
+module.exports=store;

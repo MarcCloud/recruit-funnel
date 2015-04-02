@@ -2,12 +2,28 @@ var React=require('react');
 var Actions=require('./login-actions');
 var LoginStore=require('./login-store');
 var LoginForm = React.createClass({
+    getInitialState:function(){
+      return{
+          formValid:true,
+          errorMessages:null,
+          isLogged:false
+      }
+    },
+    componentDidMount:function(){
+      LoginStore.on('change',this.onChange);
+    },
+    componentWillUnmount:function(){
+        LoginStore.off('change',this.onChange);
+    },
     submit:function(e){
         e.preventDefault();
         var credentials = { email : this.refs.email.getDOMNode().value.trim(),
-                            password:this.refs.password.getDOMNode().value.trim()
-                          };
+            password:this.refs.password.getDOMNode().value.trim()
+        };
         Actions.login(credentials);
+    },
+    onChange:function(){
+        this.setState({formValid:LoginStore.isValid(),errorMessages:LoginStore.validationMessage,isLogged:LoginStore.isLogged})
     },
     render:function(){
         return(

@@ -5,7 +5,8 @@ var LoginForm = React.createClass({
     submit:function(e){
         e.preventDefault();
         var credentials = { email : this.refs.email.getDOMNode().value.trim(),
-                            password:this.refs.password.getDOMNode().value.trim()};
+                            password:this.refs.password.getDOMNode().value.trim()
+                          };
         Actions.login(credentials);
     },
     render:function(){

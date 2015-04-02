@@ -1,15 +1,26 @@
-var Backbone=require('backbone'),
-    dispactcher=require('./login-dispatcher');
+var Backbone=require('backbone');
+    Backbone.sync=require('backbone-super-sync');
+
+var dispactcher=require('./login-dispatcher'),
+    is=require('is_js');
 
 var LoginStore = Backbone.Model.extend({
-    isValidState:true,
-    errors:null
+    user_email:null,
+    user_password:null,
+    errors:null,
+    validate:function(attrs){
+        return is.email(attrs.user_email);
+    }
 });
-
+var store = new LoginStore();
 dispactcher.on('all',function(event,payload){
    switch (event){
        case 'login':
-           console.log('trying to log in with',payload);
+           if(store.isValid()){
+               login();
+           }else{
+
+           }
            break;
        default: return;
    }

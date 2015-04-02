@@ -18,7 +18,11 @@ var LoginStore = Backbone.Model.extend({
 var store = new LoginStore();
 
 function login(){
-    store.save().then(function(res){console.log(res.headers)});
+    store.save().
+        then(function(res){
+            console.log(res.message);
+            store.set('isLogged',res.isLogged);
+        });
 }
 
 dispactcher.on('all',function(event,payload){

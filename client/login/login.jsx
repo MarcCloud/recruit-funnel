@@ -23,7 +23,8 @@ var LoginForm = React.createClass({
         Actions.login(credentials);
     },
     onChange:function(){
-        this.setState({formValid:LoginStore.isValid(),errorMessages:LoginStore.validationMessage,isLogged:LoginStore.isLogged})
+        this.setState({formValid:LoginStore.isValid(),errorMessages:LoginStore.validationError ,isLogged:LoginStore.isLogged});
+        console.log(this.state);
     },
     render:function(){
         return(

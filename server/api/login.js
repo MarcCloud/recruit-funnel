@@ -3,7 +3,7 @@
  */
 function logIn(req,res,next){
     console.log(req.body);
-    res.send('Everything ok');
+    res.status(200).send({message:'User logged', isLogged:true});
 }
 
 module.exports=logIn;

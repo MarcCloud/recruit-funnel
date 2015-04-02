@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e6f37ef8-da51-4945-97d9-c15663635b9e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/login/login-store.js" afterPath="$PROJECT_DIR$/client/login/login-store.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/api/login.js" afterPath="$PROJECT_DIR$/server/api/login.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/login/login.jsx" afterPath="$PROJECT_DIR$/client/login/login.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -28,41 +29,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="login.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="login.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/login/login.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="901">
-              <caret line="25" column="127" selection-start-line="25" selection-start-column="127" selection-end-line="25" selection-end-column="127" />
+            <state vertical-scroll-proportion="0.4973404" vertical-offset="238" max-vertical-offset="918">
+              <caret line="25" column="95" selection-start-line="25" selection-start-column="95" selection-end-line="25" selection-end-column="95" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login-store.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/api/login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login-store.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/login/login-store.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6503856" vertical-offset="87" max-vertical-offset="731">
-              <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-              <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/routes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="410" max-vertical-offset="799">
+              <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -106,8 +97,8 @@
         <option value="$PROJECT_DIR$/server/routes.js" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/server/api/login.js" />
-        <option value="$PROJECT_DIR$/client/login/login.jsx" />
         <option value="$PROJECT_DIR$/client/login/login-store.js" />
+        <option value="$PROJECT_DIR$/client/login/login.jsx" />
       </list>
     </option>
   </component>
@@ -191,20 +182,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RecruitFunnel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RecruitFunnel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -361,7 +338,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="same as previous" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -466,14 +445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/api/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17480719" vertical-offset="0" max-vertical-offset="389">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/login/login-actions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2622108" vertical-offset="0" max-vertical-offset="389">
@@ -498,18 +469,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/login/login.jsx">
+    <entry file="file://$PROJECT_DIR$/server/api/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="901">
-          <caret line="25" column="127" selection-start-line="25" selection-start-column="127" selection-end-line="25" selection-end-column="127" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/login/login-store.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6503856" vertical-offset="87" max-vertical-offset="731">
-          <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="410" max-vertical-offset="799">
+          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/login/login.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4973404" vertical-offset="238" max-vertical-offset="918">
+          <caret line="25" column="95" selection-start-line="25" selection-start-column="95" selection-end-line="25" selection-end-column="95" />
           <folding />
         </state>
       </provider>

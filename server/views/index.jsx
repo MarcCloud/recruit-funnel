@@ -3,9 +3,7 @@ var Layout = require('../../partials/layout'),
 var IndexPage = React.createClass({
         render :function (){
             return (<Layout title = "Recruit Funnel">
-                        <div id="app" className="container-fluid main">
-
-                        </div>
+                        <div id="app" className="container-fluid main"></div>
                         <script type="text/javascript" src="/scripts/login.min.js"></script>
                     </Layout>)
         }

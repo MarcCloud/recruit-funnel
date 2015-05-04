@@ -1,7 +1,6 @@
-var Backbone=require('backbone');
+var Backbone=require('backbone'),
+    dispactcher=require('./login-dispatcher');
     Backbone.sync=require('backbone-super-sync');
-
-var dispactcher=require('./login-dispatcher');
 
 var LoginStore = Backbone.Model.extend({
     user_email:null,
@@ -11,22 +10,13 @@ var LoginStore = Backbone.Model.extend({
 });
 var store = new LoginStore();
 
-function login(){
-    store.save().
-        then(function(res){
-            store.set({isLogged:res.isLogged,errors:res.message});
-        });
+function updateState(newState){
+    store.set(newState);
 }
-
-dispactcher.on('all',function(event,payload){
-   switch (event){
-       case 'login':
-                store.set({user_email:payload.email,user_password:payload.password});
-                login();
-           break;
-       default: return;
-   }
-
-});
-
+function login(payload){
+    store.set({user_email:payload.email,user_password:payload.password});
+    store.save().
+        then(updateState);
+}
+dispactcher.on('login',login);
 module.exports=store;

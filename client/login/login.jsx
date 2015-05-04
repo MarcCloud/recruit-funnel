@@ -6,9 +6,7 @@ var is= require('is_js');
 var LoginForm = React.createClass({
     getInitialState:function(){
       return{
-          formValid:true,
-          errorMessages:null,
-          isLogged:false
+          formValid:true, errorMessages:null, isLogged:false
       }
     },
     componentDidMount:function(){
@@ -19,9 +17,7 @@ var LoginForm = React.createClass({
     },
     submit:function(e){
         e.preventDefault();
-        var credentials = { email : this.refs.email.getDOMNode().value.trim(),
-            password:this.refs.password.getDOMNode().value.trim()
-        };
+        var credentials = { email : this.refs.email.getDOMNode().value.trim(), password:this.refs.password.getDOMNode().value.trim()};
         if(is.email(credentials.email)){
             this.setState({formValid:true,errorMessages:null});
             Actions.login(credentials);
@@ -33,7 +29,7 @@ var LoginForm = React.createClass({
         if(LoginStore.get('isLogged')){
             window.location.href='/funnel';
         }else{
-            this.setState({formValid:false,errorMessages:LoginStore.get('errors')});
+            this.setState({formValid:false,errorMessages:LoginStore.get('message')});
         }
     },
     render:function(){
